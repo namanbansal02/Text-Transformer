@@ -1,6 +1,6 @@
-import transformers
-from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoTokenizer, TFAutoModelForSeq2SeqLM
 from flask import Flask, request, jsonify, render_template
+
 
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
